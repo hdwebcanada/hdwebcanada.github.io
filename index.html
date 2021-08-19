@@ -80,29 +80,24 @@
               </div>
               <div class="omga-03__hero-form ">
                 <div class="form-group from-group--with-label">
-                  <input name="email" type="text" class="form-control" id="inputEmail1">
+                  <input required name="email" type="text" class="form-control" id="inputEmail1">
                   <label for="selectSize" class="form-label">Email Address</label>
                 </div>
                 <div class="form-group from-group--with-label">
-                  <input name="name" type="text" class="form-control" id="inputName1" placeholder="">
+                  <input required name="name" type="text" class="form-control" id="inputName1" placeholder="">
                   <label for="selectSize" class="form-label">Company Name</label>
                 </div>
-                <div class="form-group from-select">
-                  <!-- <label for="selectSize">Yearly budget</label> -->
-                  <select name="service-needed" class="custom-select" id="selectSize">
-                    <option selected>Primary Service</option>
-                    <option value="Product Design">Product Design</option>
-                    <option value="Fractional CTO">Fractional CTO</option>
-                    <option value="Software Development">Software Development</option>
-                  </select>
+                <div class="form-group from-group--with-label">
+                  <input name="phone" type="tel" class="form-control" id="inputPhone1" placeholder="">
+                  <label for="selectSize" class="form-label">Phone</label>
                 </div>
                 <div class="form-group from-select">
                   <!-- <label for="selectBudget">Yearly budget</label> -->
                   <select name="stage" class="custom-select" id="selectBudget">
-                    <option selected>Company Stage</option>
-                    <option value="Angel">> Angel</option>
-                    <option value="Seed Stage">> Seed Stage</option>
-                    <option value="Series A">> Series A</option>
+                    <option selected>Primary Service</option>
+                    <option value="Angel">Product Design</option>
+                    <option value="Seed Stage">Fractional CTO</option>
+                    <option value="Series A">Software Development</option>
                   </select>
                 </div>
                 <div class="hero-btn">
