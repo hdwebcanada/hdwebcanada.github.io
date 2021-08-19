@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HDWEB Canada Inc.</title>
+  <link rel="shortcut icon" href="image/png/favicon.png" type="image/x-icon">
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="fonts/icon-font/css/style.css">
+  <link rel="stylesheet" href="fonts/typography-font/typo.css">
+  <link rel="stylesheet" href="fonts/fontawesome-5/css/all.css">
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="plugins/slick/slick.min.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script>
+    function onSubmit(token) {
+      document.getElementById("invisible-recaptcha-form").submit();
+    }
+  </script>
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="css/settings.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+  <div id="loading">
+    <div class="load-circle"><span class="one"></span></div>
+  </div>
+  <div class="site-wrapper overflow-hidden ">
+    <!-- Header Area -->
+    <header class="site-header bg--conflower-blue sticky-header">
+      <div class="container-fluid pr-lg--30 pl-lg--30">
+        <nav class="navbar site-navbar offcanvas-active navbar-expand-lg navbar-light">
+          <!-- Brand Logo-->
+          <div class="brand-logo mr--30"><a href="/"><img src="./image/png/l1-logo.png" alt=""></a></div>
+          <div class="collapse navbar-collapse" id="mobile-menu">
+            <div class="navbar-nav mr--10 ml-lg-auto">
+              <ul class="navbar-nav main-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="tel:14164358626" role="button" aria-expanded="false">1.416.435.8626</a>
+                </li>
+              </ul>
+              <button class="btn-close navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
+                <i class="icon icon-simple-remove"></i>
+              </button>
+            </div>
+          </div>
+          <button class="navbar-toggler btn-close-off-canvas" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="icon icon-simple-remove icon-close"></i>
+            <i class="icon icon-menu-34 icon-burger"></i>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <!-- Hero Area -->
+    <div class="omga-02__hero-area pt-lg--200 section-padding shape-holder">
+      <div class="omga-03__hero-section-shape d-none d-md-block">
+        <img src="./image/png/hero-shape-yellow.png" alt="">
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-xl-7 col-lg-8" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
+            <div class="omga-03__hero-content py--50">
+              <h1 class="title" style="color: white;">Bring more experience to your product.</h1>
+              <p style="color: white;">Custom application development to drive your business. You can easily build a company without coding.</p>
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-4 ">
+            <form id="invisible-recaptcha-form" action="https://usebasin.com/f/c6188971bc8f" method='POST' class="omga-03__form-shape-holder">
+              <div class="omga-03__form-shape d-none d-sm-block">
+                <img src="./image/png/hero-shape-combined.png" alt="">
+              </div>
+              <div class="omga-03__hero-form ">
+                <div class="form-group from-group--with-label">
+                  <input name="email" type="text" class="form-control" id="inputEmail1">
+                  <label for="selectSize" class="form-label">Email address</label>
+                </div>
+                <div class="form-group from-group--with-label">
+                  <input name="name" type="text" class="form-control" id="inputName1" placeholder="">
+                  <label for="selectSize" class="form-label">Company name</label>
+                </div>
+                <div class="form-group from-select">
+                  <!-- <label for="selectSize">Yearly budget</label> -->
+                  <select name="service-needed" class="custom-select" id="selectSize">
+                    <option selected>Main Help Needed</option>
+                    <option value="Product Design">Product Design</option>
+                    <option value="Fractional CTO">Fractional CTO</option>
+                    <option value="Software Development">Software Development</option>
+                  </select>
+                </div>
+                <div class="form-group from-select">
+                  <!-- <label for="selectBudget">Yearly budget</label> -->
+                  <select name="stage" class="custom-select" id="selectBudget">
+                    <option selected>Company Stage</option>
+                    <option value="Angel">> Angel</option>
+                    <option value="Seed Stage">> Seed Stage</option>
+                    <option value="Series A">> Series A</option>
+                  </select>
+                </div>
+                <div class="hero-btn">
+                  <button type="submit" class="g-recaptcha btn--primary hvr-bounce-to-left" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-callback='onSubmit' data-badge="inline">Get Started</button>
+                  <style>
+                    .grecaptcha-badge {
+                      display: none;
+                    }
+                  </style>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Feature section -->
+    <div class="omga-02__feature-section section-padding">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-8 col-lg-6 offset-lg-1  pl-lg--40 order-lg-2" data-aos="fade-left" data-aos-duration="400" data-aos-once="true" data-aos-delay="300">
+            <div class="feature-content section-title">
+              <h2 class="title">Build the perfect team.</h2>
+              <p>Each application has a unique stack requiring unique skills. We can put together the perfect team for your product.</p>
+              <div class="content-btn">
+                <a href="#" class="btn--primary hvr-bounce-to-left">Learn more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-5 order-lg-1">
+            <div class="omga-02__feature-widget-wrapper">
+              <div class="row justify-content-center">
+                <div class="col-md-12 mt--25" data-aos="fade-right" data-aos-duration="400" data-aos-once="true" data-aos-delay="50">
+                  <div class="feature-widget--2">
+                    <div class="widget-icon red">
+                      <i class="icon icon-layout-11"></i>
+                    </div>
+                    <div class="widget-text">
+                      <h3 class="title">Product Design</h3>
+                      <span class="sub-title">Bringing focus to what you want out of your product.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 mt--25" data-aos="fade-right" data-aos-duration="400" data-aos-once="true" data-aos-delay="50">
+                  <div class="feature-widget--2">
+                    <div class="widget-icon blue">
+                      <i class="icon icon-sidebar-2"></i>
+                    </div>
+                    <div class="widget-text">
+                      <h3 class="title">Architecture</h3>
+                      <span class="sub-title">Advising you based on our various experience.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 mt--25" data-aos="fade-right" data-aos-duration="400" data-aos-once="true" data-aos-delay="50">
+                  <div class="feature-widget--2">
+                    <div class="widget-icon ash">
+                      <i class="icon icon-voice-recognition-2"></i>
+                    </div>
+                    <div class="widget-text">
+                      <h3 class="title">Software Development</h3>
+                      <span class="sub-title">Help building and maintaining your product.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Content section 1 -->
+    <div class="omga-02__content-section1">
+      <div class="container position-static">
+        <div class="row position-static">
+          <div class="col-md-8 col-lg-6" data-aos="fade-right" data-aos-duration="400" data-aos-once="true" data-aos-delay="300">
+            <div class="omga-02__content-text section-title order-lg-1">
+              <h2 class="title">Emphasis on architecture
+                over tech stack.</h2>
+              <p>Choosing the right tech stack comes after choosing the right architecture. We know languages and frameworks don't solve problems by themselves.</p>
+              <div class="content-btn">
+                <a href="#" class="btn--primary hvr-bounce-to-left">Get Started</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-8 position-static pb--80 pb-lg--0">
+            <div class="omga-02__content1-img-group position-lg-absolute">
+              <div class="img-half">
+                <img src="./image/jpeg/l2-content1-bg1.jpg" alt="">
+              </div>
+              <!--<div class="abs-img round-img" data-aos="fade-up" data-aos-duration="400" data-aos-once="true" data-aos-delay="300">
+              <img src="./image/png/l2-content1-oval.png" alt="">-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Content section 2 -->
+  <div class="omga-02__content-section2 section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="section-title text-center mb--50 mb-lg--80">
+            <h2 class="title">We cover everything<br>you’ll ever need.</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 mb--30" data-aos="zoom-in" data-aos-duration="400" data-aos-once="true" data-aos-delay="50">
+          <div class="content-widget--2">
+            <div class="widget-icon red">
+              <i class="icon icon-cards-2"></i>
+            </div>
+            <div class="widget-text d-flex align-items-center">
+              <h3 class="title">
+                Product Design
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb--30" data-aos="zoom-in" data-aos-duration="400" data-aos-once="true" data-aos-delay="150">
+          <div class="content-widget--2">
+            <div class="widget-icon blue">
+              <i class="icon icon-layout-11"></i>
+            </div>
+            <div class="widget-text d-flex align-items-center">
+              <h3 class="title">
+                Full Stack Development
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb--30" data-aos="zoom-in" data-aos-duration="400" data-aos-once="true" data-aos-delay="250">
+          <div class="content-widget--2">
+            <div class="widget-icon yellow">
+              <i class="icon icon-phone-charging-3-2"></i>
+            </div>
+            <div class="widget-text d-flex align-items-center">
+              <h3 class="title">
+                Mobile Development
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 mb--30" data-aos="zoom-in" data-aos-duration="400" data-aos-once="true" data-aos-delay="450">
+          <div class="content-widget--2">
+            <div class="widget-icon blue">
+              <i class="icon icon-sidebar-2"></i>
+            </div>
+            <div class="widget-text d-flex align-items-center">
+              <h3 class="title">
+                Documentation
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb--30" data-aos="zoom-in" data-aos-duration="400" data-aos-once="true" data-aos-delay="350">
+          <div class="content-widget--2">
+            <div class="widget-icon red">
+              <i class="icon icon-grid-45"></i>
+            </div>
+            <div class="widget-text d-flex align-items-center">
+              <h3 class="title">
+                Quality Assurance
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 mb--30" data-aos="zoom-in" data-aos-duration="400" data-aos-once="true" data-aos-delay="550">
+          <div class="content-widget--2">
+            <div class="widget-icon blue">
+              <i class="icon icon-bookmark-2-2"></i>
+            </div>
+            <div class="widget-text d-flex align-items-center">
+              <h3 class="title">
+                Deployment
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb--30" data-aos="zoom-in" data-aos-duration="400" data-aos-once="true" data-aos-delay="650">
+          <div class="content-widget--2">
+            <div class="widget-icon green">
+              <i class="icon icon-voice-recognition-2"></i>
+            </div>
+            <div class="widget-text d-flex align-items-center">
+              <h3 class="title">
+                Maintenance
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb--30" data-aos="zoom-in" data-aos-duration="400" data-aos-once="true" data-aos-delay="750">
+          <div class="content-widget--2">
+            <div class="widget-icon red">
+              <i class="icon icon-infinite"></i>
+            </div>
+            <div class="widget-text d-flex align-items-center">
+              <h3 class="title">
+                Monitoring
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Content section 3 -->
+  <div class="omga-02__content-section3 section-padding">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-10 order-lg-2 mb--30">
+          <div class="omga-02__content-img-group-1 position-relative text-lg-right">
+            <div class="img-1" data-aos="fade-down" data-aos-duration="400" data-aos-once="true">
+              <img src="./image/jpeg/l2-content3-big.jpg" alt="">
+            </div>
+            <!--<div class="abs-img img-2" data-aos="fade-right" data-aos-duration="400" data-aos-once="true" data-aos-delay="300">
+              <img src="./image/png/l2-content3-oval.png" alt="">
+            </div>-->
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-9 order-lg-1" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
+          <div class="omga-02__content-text section-title pr--25">
+            <h2 class="title">Faster Iterations. Less Dead-Ends.</h2>
+            <p>In the hands of the less experienced R+D explorations take longer and rarely result in clear product learnings.
+              We keep you on track to achieve your business goals.</p>
+            <div class="content-btn">
+              <a href="#" class="btn--primary hvr-bounce-to-left">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--
+  <div class="omga-02__testimonial-section section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-9 col-lg-6">
+          <div class="section-title text-center mb--50 mb-lg--80">
+            <h2 class="title">Customer reviews</h2>
+            <p>Create custom landing pages with Omega that converts more visitors than any website.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-11">
+          <div class="testimonial-slider">
+            <div class="single-slide">
+              <div class="testimonial-card--2">
+                <p class="review-text">OMG! I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish.</p>
+                <div class="card-footer">
+                  <div class="customer-img">
+                    <img src="./image/jpeg/l1-customer2.jpg" alt="">
+                  </div>
+                  <div class="customer-identity">
+                    <h3 class="name">Jonathan Taylor</h3>
+                    <p class="company">CEO at Creativex</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-slide">
+              <div class="testimonial-card--2">
+                <p class="review-text">OMG! I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish.</p>
+                <div class="card-footer">
+                  <div class="customer-img">
+                    <img src="./image/jpeg/l1-customer3.jpg" alt="">
+                  </div>
+                  <div class="customer-identity">
+                    <h3 class="name">Marie Stanley</h3>
+                    <p class="company">Digital Marketer, Writer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-slide">
+              <div class="testimonial-card--2">
+                <p class="review-text">OMG! I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish.</p>
+                <div class="card-footer">
+                  <div class="customer-img">
+                    <img src="./image/jpeg/l1-customer1.jpg" alt="">
+                  </div>
+                  <div class="customer-identity">
+                    <h3 class="name">Jonathan Taylor</h3>
+                    <p class="company">CEO at Creativex</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-slide">
+              <div class="testimonial-card--2">
+                <p class="review-text">OMG! I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish.</p>
+                <div class="card-footer">
+                  <div class="customer-img">
+                    <img src="./image/jpeg/l1-customer2.jpg" alt="">
+                  </div>
+                  <div class="customer-identity">
+                    <h3 class="name">Marie Stanley</h3>
+                    <p class="company">Digital Marketer, Writer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-slide">
+              <div class="testimonial-card--2">
+                <p class="review-text">OMG! I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish.</p>
+                <div class="card-footer">
+                  <div class="customer-img">
+                    <img src="./image/jpeg/l1-customer1.jpg" alt="">
+                  </div>
+                  <div class="customer-identity">
+                    <h3 class="name">Jonathan Taylor</h3>
+                    <p class="company">CEO at Creativex</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-slide">
+              <div class="testimonial-card--2">
+                <p class="review-text">OMG! I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish.</p>
+                <div class="card-footer">
+                  <div class="customer-img">
+                    <img src="./image/jpeg/l1-customer3.jpg" alt="">
+                  </div>
+                  <div class="customer-identity">
+                    <h3 class="name">Marie Stanley</h3>
+                    <p class="company">Digital Marketer, Writer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+-->
+  <!-- CTA section -->
+  <div class="omga-02__cta-section section-padding">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-10">
+          <div class="omga-02__content-img-group-2 position-relative mb--30">
+            <div class="img-1" data-aos="fade-down" data-aos-duration="400" data-aos-once="true">
+              <img src="./image/jpeg/l2-cta-big.jpg" alt="">
+            </div>
+            <!--<div class="abs-img img-2" data-aos="fade-right" data-aos-duration="400" data-aos-once="true" data-aos-delay="300">
+              <img src="./image/png/l2-cta-oval.png" alt="">
+            </div>-->
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-9" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
+          <div class="omga-02__cta-content section-title pr--25">
+            <h2 class="title">Tell us about your project</h2>
+            <p>Successful engagements always begin with a good conversation. We'd love to learn about your project.</p>
+            <div class="content-btn">
+              <a href="#" class="btn--primary hvr-bounce-to-left">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Vendor Scripts -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="plugins/jquery/jquery-migrate.min.js"></script>
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Plugin's Scripts -->
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="plugins/aos/aos.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <!-- Footer section -->
+  <div class="footer-section footer-2 section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-4 mb--50 mb-lg--0">
+          <div class="pr-lg--50">
+            <div class="footer-logo mb--20">
+              <a href="/"><img src="./image/png/l1-logo.png" alt=""></a>
+            </div>
+            <p>Your product built right.</p>
+          </div>
+        </div>
+        <div class="col-lg-9 col-md-8">
+          <div class="row">
+            <div class="col-6 col-lg-3">
+              <div class="single-footer mb--50 mb-lg--30">
+                <!--<h5 class="footer-title">About</h5>
+              <ul class="footer-list">
+                <li><a href="">Our mission</a></li>
+                <li><a href="">Our story</a></li>
+                <li><a href="">Team Members</a></li>
+              </ul>-->
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="single-footer mb--50 mb-lg--30">
+                <!--<h5 class="footer-title">Learn</h5>
+              <ul class="footer-list">
+                <li><a href="">Tutorials</a></li>
+                <li><a href="">How it works</a></li>
+                <li><a href="">F.A.Q</a></li>
+              </ul>-->
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="single-footer mb--50 mb-lg--30">
+                <h5 class="footer-title">Terms</h5>
+                <ul class="footer-list">
+                  <li><a href="terms.html">Terms</a></li>
+                  <li><a href="privacy.html">Privacy</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="single-footer mb--50 mb-lg--30">
+                <h5 class="footer-title">Contact us</h5>
+                <ul class="footer-list contact-list">
+                  <li><a href="">mike@hdwebcanada.com
+                    </a></li>
+                  <li><a href="">+1.416.435.8626</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Activation Script -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
