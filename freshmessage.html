@@ -1,17 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
-	<meta charset="utf-8">
-	<title>FreshMessage Test</title>
-	<script> (function (d, w, c) { if(!d.getElementById("spd-busns-spt")) { var n = d.getElementsByTagName('script')[0], s = d.createElement('script'); var loaded = false; s.id = "spd-busns-spt"; s.async = "async"; s.setAttribute("data-self-init", "false"); s.setAttribute("data-init-type", "opt"); s.src = 'https://cdn.freshbots.ai/assets/share/js/freshbots.min.js'; s.setAttribute("data-client", "f038dc2c67eb1963744812eaceef5ad708da1db4"); s.setAttribute("data-bot-hash", "61834ec56847e8cd4387c470d1268dbdf241395a"); s.setAttribute("data-env", "prod"); s.setAttribute("data-region", "us"); if (c) { s.onreadystatechange = s.onload = function () { if (!loaded) { c(); } loaded = true; }; } n.parentNode.insertBefore(s, n); } }) (document, window, function () { Freshbots.initiateWidget({ autoInitChat: false, getClientParams: function () { return ; } }, function(successResponse) { }, function(errorResponse) { }); }); </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HDWEB Canada Inc.</title>
+  <link rel="shortcut icon" href="image/png/favicon.png" type="image/x-icon">
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="fonts/icon-font/css/style.css">
+  <link rel="stylesheet" href="fonts/typography-font/typo.css">
+  <link rel="stylesheet" href="fonts/fontawesome-5/css/all.css">
+
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="plugins/nice-select/nice-select.min.css">
+ <!--<link rel="stylesheet" href="plugins/slick/slick.min.css">-->
+  
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+  <script>
+function onSubmit(token) {
+document.getElementById("invisible-recaptcha-form").submit();
+}
+</script>
 	
+<script> (function (d, w, c) { if(!d.getElementById("spd-busns-spt")) { var n = d.getElementsByTagName('script')[0], s = d.createElement('script'); var loaded = false; s.id = "spd-busns-spt"; s.async = "async"; s.setAttribute("data-self-init", "false"); s.setAttribute("data-init-type", "opt"); s.src = 'https://cdn.freshbots.ai/assets/share/js/freshbots.min.js'; s.setAttribute("data-client", "f038dc2c67eb1963744812eaceef5ad708da1db4"); s.setAttribute("data-bot-hash", "61834ec56847e8cd4387c470d1268dbdf241395a"); s.setAttribute("data-env", "prod"); s.setAttribute("data-region", "us"); if (c) { s.onreadystatechange = s.onload = function () { if (!loaded) { c(); } loaded = true; }; } n.parentNode.insertBefore(s, n); } }) (document, window, function () { Freshbots.initiateWidget({ autoInitChat: false, getClientParams: function () { return ; } }, function(successResponse) { }, function(errorResponse) { }); }); </script>
+	
+ <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="css/settings.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
-	<h1>This is a fresh message test</h1>
+{% include  '_preloader.njk' %}
+  <div class="site-wrapper overflow-hidden {{page_class}}">
+      {% block main %}
+    
+      {% endblock %}
+  </div>
+  <!-- Vendor Scripts -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="plugins/jquery/jquery-migrate.min.js"></script>
+  <!--<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>-->
 
-
+  <!-- Plugin's Scripts -->
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="plugins/aos/aos.min.js"></script>
+  <!--<script src="plugins/slick/slick.min.js"></script>-->
+	
+  <script src="js/custom.js"></script>
 </body>
 </html>
